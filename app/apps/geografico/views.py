@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the geo index.")
+    return HttpResponse("Hello, world. Este archivo está siendo editado por Leo.")
