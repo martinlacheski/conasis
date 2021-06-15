@@ -12,7 +12,7 @@ from apps.mixins import ValidatePermissionRequiredMixin
 class TiposDocumentosListView(LoginRequiredMixin, ValidatePermissionRequiredMixin, ListView):
     model = TiposDocumentos
     template_name = 'tipos_documentos/list.html'
-    permission_required = 'parametros.view_tipos_documentos'
+    permission_required = 'parametros.view_tiposdocumentos'
 
     @method_decorator(csrf_exempt)
     def dispatch(self, request, *args, **kwargs):
@@ -45,7 +45,7 @@ class TiposDocumentosCreateView(LoginRequiredMixin, ValidatePermissionRequiredMi
     form_class = TiposDocumentosForm
     template_name = 'tipos_documentos/create.html'
     success_url = reverse_lazy('parametros:tipos_documentos_list')
-    permission_required = 'parametros.add_tipos_documentos'
+    permission_required = 'parametros.add_tiposdocumentos'
     url_redirect = success_url
 
     def dispatch(self, request, *args, **kwargs):
@@ -77,7 +77,7 @@ class TiposDocumentosUpdateView(LoginRequiredMixin, ValidatePermissionRequiredMi
     form_class = TiposDocumentosForm
     template_name = 'tipos_documentos/create.html'
     success_url = reverse_lazy('parametros:tipos_documentos_list')
-    permission_required = 'parametros.change_tipos_documentos'
+    permission_required = 'parametros.change_tiposdocumentos'
     url_redirect = success_url
 
     def dispatch(self, request, *args, **kwargs):
@@ -109,7 +109,7 @@ class TiposDocumentosDeleteView(LoginRequiredMixin, ValidatePermissionRequiredMi
     model = TiposDocumentos
     template_name = 'tipos_documentos/delete.html'
     success_url = reverse_lazy('parametros:tipos_documentos_list')
-    permission_required = 'parametros.delete_tipos_documentos'
+    permission_required = 'parametros.delete_tiposdocumentos'
     url_redirect = success_url
 
     def dispatch(self, request, *args, **kwargs):
