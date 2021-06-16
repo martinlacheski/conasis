@@ -15,7 +15,7 @@ class PaisesForm(ModelForm):
                 attrs={
                     'placeholder': 'Ingrese un nombre',
                     #agregamos este estilo para que convierta lo que ingresamos a mayuscula
-                    #'style': 'text-transform: uppercase',
+                    'style': 'text-transform: uppercase',
                 }
             ),
         }
@@ -45,7 +45,7 @@ class ProvinciasForm(ModelForm):
                 attrs={
                     'placeholder': 'Ingrese un nombre',
                     # agregamos este estilo para que convierta lo que ingresamos a mayuscula
-                    #'style': 'text-transform: uppercase',
+                    'style': 'text-transform: uppercase',
                 }
             ),
         }
@@ -84,14 +84,14 @@ class LocalidadesForm(ModelForm):
                 attrs={
                     'placeholder': 'Ingrese un nombre',
                     # agregamos este estilo para que convierta lo que ingresamos a mayuscula
-                    #'style': 'text-transform: uppercase',
+                    'style': 'text-transform: uppercase',
                 }
             ),
             'codigo_postal': TextInput(
                 attrs={
                     'placeholder': 'Ingrese un código postal',
                     # agregamos este estilo para que convierta lo que ingresamos a mayuscula
-                    #'style': 'text-transform: uppercase',
+                    'style': 'text-transform: uppercase',
                     'style': 'width: 100%'
                 }
             ),

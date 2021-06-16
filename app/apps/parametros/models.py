@@ -20,6 +20,11 @@ class TiposDocumentos(models.Model):
         db_table = 'tipos_documentos'
         ordering = ['id']
 
+    # Para convertir a MAYUSCULA
+    def save(self, force_insert=False, force_update=False):
+        self.nombre = self.nombre.upper()
+        self.descripcion = self.descripcion.upper()
+        super(TiposDocumentos, self).save(force_insert, force_update)
 
 #   Clase Sexos
 class Sexos(models.Model):
@@ -38,6 +43,10 @@ class Sexos(models.Model):
         db_table = 'sexos'
         ordering = ['id']
 
+    # Para convertir a MAYUSCULA
+    def save(self, force_insert=False, force_update=False):
+        self.nombre = self.nombre.upper()
+        super(Sexos, self).save(force_insert, force_update)
 
 #   Clase Tarjetas
 class Tarjetas(models.Model):
@@ -57,6 +66,11 @@ class Tarjetas(models.Model):
         db_table = 'tarjetas_aproximacion'
         ordering = ['id']
 
+    # Para convertir a MAYUSCULA
+    def save(self, force_insert=False, force_update=False):
+        self.nombre = self.nombre.upper()
+        self.codigo = self.codigo.upper()
+        super(Tarjetas, self).save(force_insert, force_update)
 
 #   Clase Estados
 class Estados(models.Model):
@@ -74,3 +88,8 @@ class Estados(models.Model):
         verbose_name_plural = 'Estados'
         db_table = 'estados'
         ordering = ['id']
+
+    # Para convertir a MAYUSCULA
+    def save(self, force_insert=False, force_update=False):
+        self.nombre = self.nombre.upper()
+        super(Estados, self).save(force_insert, force_update)

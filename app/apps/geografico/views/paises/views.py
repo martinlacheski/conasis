@@ -16,7 +16,6 @@ class PaisesListView(LoginRequiredMixin, ValidatePermissionRequiredMixin, ListVi
     permission_required = 'geografico.view_paises'
 
     @method_decorator(csrf_exempt)
-    #@method_decorator(login_required)
     def dispatch(self, request, *args, **kwargs):
         return super().dispatch(request, *args, **kwargs)
 
@@ -51,7 +50,6 @@ class PaisesCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Crea
     permission_required = 'geografico.add_paises'
     url_redirect = success_url
 
-    #@method_decorator(login_required)
     def dispatch(self, request, *args, **kwargs):
         return super().dispatch(request, *args, **kwargs)
 

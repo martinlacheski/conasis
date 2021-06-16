@@ -112,6 +112,8 @@ class TiposUsuariosForm(ModelForm):
             'nombre': TextInput(
                 attrs={
                     'placeholder': 'Ingrese un nombre',
+                    # agregamos este estilo para que convierta lo que ingresamos a mayuscula
+                    'style': 'text-transform: uppercase',
                 }
             ),
         }

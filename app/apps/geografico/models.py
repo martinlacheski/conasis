@@ -19,6 +19,10 @@ class Paises(models.Model):
         db_table = 'paises'
         ordering = ['id']
 
+    #Para convertir a MAYUSCULA
+    def save(self, force_insert=False, force_update=False):
+        self.nombre = self.nombre.upper()
+        super(Paises, self).save(force_insert, force_update)
 
 #   Clase Provincias
 class Provincias(models.Model):
@@ -38,7 +42,10 @@ class Provincias(models.Model):
         verbose_name_plural = 'Provincias'
         db_table = 'provincias'
         ordering = ['id']
-
+    #Para convertir a MAYUSCULA
+    def save(self, force_insert=False, force_update=False):
+        self.nombre = self.nombre.upper()
+        super(Provincias, self).save(force_insert, force_update)
 
 #   Clase Localidades
 class Localidades(models.Model):
@@ -61,4 +68,9 @@ class Localidades(models.Model):
         verbose_name_plural = 'Localidades'
         db_table = 'localidades'
         ordering = ['id']
+
+    # Para convertir a MAYUSCULA
+    def save(self, force_insert=False, force_update=False):
+        self.nombre = self.nombre.upper()
+        super(Localidades, self).save(force_insert, force_update)
 

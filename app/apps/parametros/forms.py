@@ -14,11 +14,15 @@ class TiposDocumentosForm(ModelForm):
             'nombre': TextInput(
                 attrs={
                     'placeholder': 'Ingrese un nombre',
+                    # agregamos este estilo para que convierta lo que ingresamos a mayuscula
+                    'style': 'text-transform: uppercase',
                 }
             ),
             'descripcion': TextInput(
                 attrs={
                     'placeholder': 'Ingrese una descripción',
+                    # agregamos este estilo para que convierta lo que ingresamos a mayuscula
+                    'style': 'text-transform: uppercase',
                 }
             ),
         }
@@ -48,6 +52,8 @@ class SexosForm(ModelForm):
             'nombre': TextInput(
                 attrs={
                     'placeholder': 'Ingrese un nombre',
+                    # agregamos este estilo para que convierta lo que ingresamos a mayuscula
+                    'style': 'text-transform: uppercase',
                 }
             ),
         }
@@ -77,6 +83,8 @@ class TarjetasForm(ModelForm):
             'nombre': TextInput(
                 attrs={
                     'placeholder': 'Ingrese un nombre',
+                    # agregamos este estilo para que convierta lo que ingresamos a mayuscula
+                    'style': 'text-transform: uppercase',
                 }
             ),
             'codigo': TextInput(
@@ -111,6 +119,8 @@ class EstadosForm(ModelForm):
             'nombre': TextInput(
                 attrs={
                     'placeholder': 'Ingrese un nombre',
+                    # agregamos este estilo para que convierta lo que ingresamos a mayuscula
+                    'style': 'text-transform: uppercase',
                 }
             ),
         }

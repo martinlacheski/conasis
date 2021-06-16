@@ -21,6 +21,11 @@ class TiposUsuarios(models.Model):
         db_table = 'usuarios_tipos'
         ordering = ['id']
 
+    # Para convertir a MAYUSCULA
+    def save(self, force_insert=False, force_update=False):
+        self.nombre = self.nombre.upper()
+        super(TiposUsuarios, self).save(force_insert, force_update)
+
 #   Clase Usuarios
 class Usuarios(AbstractUser):
     legajo = models.CharField(max_length=10, null=True, blank=True, verbose_name='Legajo')
