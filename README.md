@@ -35,6 +35,10 @@ sudo apt install docker
 
 sudo apt install docker-compose
 
+Para Sistemas Operativos Windows y Mac, descargar el programa Docker Desktop desde:
+
+https://www.docker.com/products/docker-desktop
+
 Descargar el proyecto completo de Github
 
 ubicarse dentro del mismo, donde se encuentran los archivos Dockerfile y docker-compose.yml
