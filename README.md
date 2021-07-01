@@ -1,6 +1,6 @@
 # ConAsis
 
-Sistema de Control de Asistencia del Personal
+#Sistema de Control de Asistencia del Personal
 
 El proyecto fue desarrollado en el lenguaje Python, se utilizo el Framework Django para ello. 
 
@@ -27,7 +27,7 @@ BASE DE DATOS:
 
 Para el desarrollo del proyecto se utilizo el motor de base de datos PostgreSQL 12
 
-EJECUTAR EL PROYECTO
+#EJECUTAR EL PROYECTO
 
 Para Sistemas Operativos Linux, ejecutar los siguientes comandos para descargar Docker y Docker Compose:
 
@@ -43,14 +43,15 @@ Descargar el proyecto completo de Github
 
 ubicarse dentro del mismo, donde se encuentran los archivos Dockerfile y docker-compose.yml
 
-Ejecutar los siguientes comandos:
+#Ejecutar los siguientes comandos:
 
-sudo docker compose run web
-#Construye el proyecto, y debemos crear un superusuario para poder ejecutar el mismo.
+sudo docker-compose run web
+
+Construye el proyecto, y debemos crear un superusuario para poder ejecutar el mismo.
 
 Luego, una vez que finaliza de ejecutarse, presionar CTRL + C para detener la ejecucion
 
-Ejecutar:
+#Ejecutar:
 
 sudo docker-compose up
 
