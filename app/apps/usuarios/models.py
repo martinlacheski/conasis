@@ -31,7 +31,7 @@ class Usuarios(AbstractUser):
     legajo = models.CharField(max_length=10, null=True, blank=True, verbose_name='Legajo')
     dni = models.PositiveIntegerField(verbose_name='Documento', null=True, blank=True)
     telefono = models.TextField(null=True, blank=True)
-    tipo = models.ForeignKey(TiposUsuarios, models.DO_NOTHING, verbose_name='Tipo')
+    tipo = models.ForeignKey(TiposUsuarios, models.DO_NOTHING,  null=True, blank=True, verbose_name='Tipo')
 
     def toJSON(self):
         item = model_to_dict(self, exclude=['password', 'user_permissions', 'last_login', 'date_joined'])
