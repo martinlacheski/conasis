@@ -1,4 +1,4 @@
-# ConAsis
+# Aplicación en Django - Docker - Docker BD PostgreSQL 
 
 #Sistema de Control de Asistencia del Personal
 
